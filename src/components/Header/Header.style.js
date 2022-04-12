@@ -3,18 +3,21 @@ import styled from "styled-components";
 export const Container = styled.header `
     display: flex;
     justify-content: space-between;
-    //align-items: center;
-    position: fixed;
-    //height: 90px;
-    //background-color: #F48958;
-    top: 0;
+    align-items: center;
+    position: relative;
+    top: 88px;
+    left: 99px;
+    right: 99px;
+
+    @media (max-width: 768px) {
+        top: 21px;
+        left: 0;
+        right: 0;
+    }
 `;
 
 export const Logo = styled.div `
     display: flex;
-    margin-top: 88px;
-    margin-left: 99px;
-    margin-right: 106px;
 
     .logo img {
         width: 318px;
@@ -22,9 +25,7 @@ export const Logo = styled.div `
     }
     
     @media (max-width: 768px) {
-        margin-top: 21px;
         margin-left: 16px;
-        margin-right: 0;
 
         .logo img {
             width: 240px;
