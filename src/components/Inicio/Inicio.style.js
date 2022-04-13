@@ -4,14 +4,16 @@ export const Container = styled.div `
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    top: 91px;
     left: 99px;
     right: 99px;
+    margin-bottom: 88px;
 
     @media (min-width: 769px) {
         position: relative;
         
         .titulo {
-            margin-top: 160px;
+            margin-top: 91px;
             margin-bottom: 50px;
             font-family: 'Montserrat';
             font-weight: 700;
@@ -76,12 +78,13 @@ export const Container = styled.div `
             height: 48px;
             margin-top: 64px;
             margin-left: 5%;
+            margin-bottom: 97px;
         }
     }
 `;
 
 export const Imagem = styled.div `
-    margin-top: 160px;
+    margin-top: 91px;
     margin-right: 99px;
     width: 40vw;
     display: flex;

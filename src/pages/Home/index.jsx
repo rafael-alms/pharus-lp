@@ -1,6 +1,7 @@
 import * as S from './Home.style'
 import Header from '../../components/Header'
 import Inicio from '../../components/Inicio'
+import Descricao from '../../components/Descricao'
 //import { useNavigate } from 'react-router-dom'
 //import { Link } from 'react-router-dom'
 
@@ -34,6 +35,7 @@ const Home = () => {
         {/*<Link to="/home">Home sem reload</Link>*/}
         {/* <div id="insta"></div> */}
         <Inicio />
+        <Descricao />
       </S.Container>
     </>
   );
