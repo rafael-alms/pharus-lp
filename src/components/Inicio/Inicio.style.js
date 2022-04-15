@@ -7,10 +7,10 @@ export const Container = styled.div `
     top: 91px;
     left: 99px;
     right: 99px;
-    margin-bottom: 88px;
 
     @media (min-width: 769px) {
         position: relative;
+        height: 750px;
         
         .titulo {
             margin-top: 91px;
@@ -18,6 +18,7 @@ export const Container = styled.div `
             font-family: 'Montserrat';
             font-weight: 700;
             font-size: 34px;
+            width: 40vw;
         }
 
         .conteudo {
@@ -31,19 +32,29 @@ export const Container = styled.div `
         }
 
         button {
-            background-color: #AFAEB3;
+            background: #5C25C6;
+            color: #F1F1F2;
             font-family: 'Montserrat';
             font-weight: 700;
             font-size: 24px;
             border-radius: 16px;
             width: 40vw;
             height: 56px;
-            margin-top: 36px;
+            margin-top: 91px;
+        }
+
+        button:hover {
+            background: #6D36D7;
         }
     }
 
+    button:active {
+            background: #4B14B5;
+        }
+
     @media (max-width: 768px) {
         margin-top: 71px;
+        margin-bottom: 88px;
         flex-direction: column; 
         display: flex;
         align-items: center;
@@ -54,6 +65,7 @@ export const Container = styled.div `
             font-weight: 700;
             font-size: 24px;
             margin-bottom: 22px;
+            text-align: center;
             display: flex;
             justify-content: center;
         }
@@ -69,7 +81,8 @@ export const Container = styled.div `
         }
 
         button {
-            background-color: #787780;
+            background: #5C25C6;
+            color: #F1F1F2;
             font-family: 'Montserrat';
             font-weight: 600;
             font-size: 20px;
@@ -88,7 +101,6 @@ export const Imagem = styled.div `
     margin-right: 99px;
     width: 40vw;
     display: flex;
-    align-items: center;
     justify-content: center;
 
     .telas {
@@ -101,7 +113,7 @@ export const Imagem = styled.div `
     }
     
     @media (max-width: 768px) {
-        margin-top: 72px;
+        margin-top: 150px;
         margin-right: 0;
 
         .telas {

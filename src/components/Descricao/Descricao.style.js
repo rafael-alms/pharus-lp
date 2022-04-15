@@ -7,25 +7,26 @@ export const Container = styled.div `
     flex-direction: row-reverse;
     position: relative;
     top: 48px;
-    margin-left: 99px;
+    left: 99px;
+    right: 99px;
     margin-bottom: 118px;
-    margin-right: 130px;
 
     @media (max-width: 768px) {
         top: 0;
-        margin-left: 0;
-        margin-right: 0;
+        left: 0;
+        right: 0;
         margin-bottom: 48px;
         flex-direction: column-reverse;
     }
 `;
 
-export const Image = styled.div `
+export const Imagem = styled.div `
     margin-top: 91px;
-    margin-left: 61px;
+    margin-right: 198px;
     
     @media (max-width: 768px) {
         margin-left: 0;
+        margin-right: 0;
 
         img {
             width: 300px;
@@ -34,10 +35,10 @@ export const Image = styled.div `
     }
 `;
 
-export const Text = styled.div `
+export const Texto = styled.div `
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    //text-align: justify;
     margin-top: 48px;
     margin-right: 61px;
     width: 60%;
@@ -55,7 +56,8 @@ export const Text = styled.div `
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
-        margin-top: 25px;
+        width: 80%;
+        //margin-top: 25px;
     }
 
     @media (max-width: 768px) {
@@ -63,7 +65,6 @@ export const Text = styled.div `
         justify-content: center;
         width: 90%;
         margin: 0;
-
 
         .titulo {
             font-weight: 600;
@@ -76,6 +77,7 @@ export const Text = styled.div `
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
+            width: 100%;
         }
     }
 `;

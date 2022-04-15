@@ -1,5 +1,5 @@
 import * as S from './Inicio.style';
-import tela1 from '../../assets/images/tela1.png';
+import escola from '../../assets/images/escola.png';
 
 const Inicio = () => {
 
@@ -7,13 +7,12 @@ const Inicio = () => {
         <S.Container>
             <S.Imagem>
                 <div className="telas">
-                    <img src={tela1} alt="tela1" />
+                    <img src={escola} alt="escola" />
                 </div>
             </S.Imagem>
             <div>
-                <p className='titulo'>Subtítulo</p>
-                <p className='conteudo'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum purus quis turpis varius viverra. Donec vulputate tincidunt sollicitudin. Vivamus in turpis dignissim, tempor massa in, viverra enim. Suspendisse potenti. In vitae dolor a felis finibus bibendum molestie nec sem. Ut eu condimentum ipsum. Nam et est ac est auctor varius.</p>
-                <p className='conteudo'>Sed maximus nisi at erat rutrum, eu venenatis ligula elementum. Maecenas ultrices, purus eget cursus lacinia, libero lorem pellentesque lorem, ut posuere erat justo quis arcu. Proin odio erat, varius nec hendrerit nec, pellentesque ac neque. Proin tincidunt volutpat turpis, in feugiat lacus condimentum et.</p>
+                <p className='titulo'>EDUCAR PARA DESENVOLVER</p>
+                <p className='conteudo'>Estar preparado para caminhar em um mundo volátil, complexo, onde a informação e a demanda por novos conhecimentos são cada dia mais necessários, a Escola precisa abrir as portas para que sua grade curricular possa estar complementada para um novo cenário de mercado.<br />O Pharus é um aplicativo educacional que tem como finalidade criar uma parceria entre Escola / Aluno / Empresa.<br />Através de projetos gamificados promover o aprendizado dos alunos.</p>
                 <button>Saiba mais</button>
             </div>
         </S.Container>

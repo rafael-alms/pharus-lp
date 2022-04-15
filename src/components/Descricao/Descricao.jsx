@@ -5,14 +5,19 @@ const Descricao = () => {
         
     return (
         <S.Container>
-            <S.Image>
+            <S.Imagem>
                 <img src={image} alt="image" />
-            </S.Image>
-            <S.Text>
+            </S.Imagem>
+            <S.Texto>
                 <p className='titulo'>Descrição</p>
-                <p className='conteudo'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum purus quis turpis varius viverra. Donec vulputate tincidunt sollicitudin. Vivamus in turpis dignissim, tempor massa in, viverra enim. Suspendisse potenti. In vitae dolor a felis finibus bibendum molestie nec sem. Ut eu condimentum ipsum. Nam et est ac est auctor varius.</p>
-                <p className='conteudo'>Sed maximus nisi at erat rutrum, eu venenatis ligula elementum. Maecenas ultrices, purus eget cursus lacinia, libero lorem pellentesque lorem, ut posuere erat justo quis arcu. Proin odio erat, varius nec hendrerit nec, pellentesque ac neque. Proin tincidunt volutpat turpis, in feugiat lacus condimentum et. Aenean fringilla erat quis felis volutpat, eu ultrices lacus pellentesque. Quisque ac orci in enim tempus accumsan. Nunc placerat ultrices lacinia. Vivamus nisl lorem, congue commodo velit a, feugiat ultricies augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam in justo tortor. Nulla nec ipsum nisl. Phasellus nulla quam, ultricies id arcu et, aliquam porta magna. Phasellus ac ex felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla nec metus eu justo semper mollis.</p>
-            </S.Text>
+                <p className='conteudo'>O Pharus nasceu através da leitura e estudo da <a href="https://brasil.un.org/pt-br/sdgs" target="_blank">ODS 8 da ONU</a>, por meio da 4ª Edição do Camp da Ioasys.</p>
+                <p className='conteudo'>O time formado por 11 integrantes de diversas áreas e localidades do país, através da aplicação de metodologia de Discovery e Produtos, focaram o trabalho para melhoria da capacitação de jovens do ensino médio ao fundamental para Escolas Públicas.</p>
+                <p className='conteudo'>O Pharus é um aplicativo educacional, desenvolvido para ser aplicado em plataforma Android e IOS.</p>
+                <p className='conteudo'>O aplicativo irá permitir que Escolas possam formar parcerias com empresas, trazendo para a grade curricular disciplinas para desenvolver e capacitar alunos, visando a motivação educional e a entrada no mercado de trabalho.</p>
+                <p className='conteudo'>O aplicativo permitirá ao aluno escolher um Avatar para que possa ter um ambiente de game para executar tarefas a serem aplicadas em projetos de parcerias.</p>
+                <p className='conteudo'>O Pharus irá mostrar o ranking dos alunos, incentivando a sua busca por conhecimentos.</p>
+                <p className='conteudo'>A gamificação será o gatilho para envolver os jovens na iniciativa de conhecer novas disciplinas.</p>
+            </S.Texto>
         </S.Container>
     )
 }

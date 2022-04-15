@@ -17,13 +17,13 @@ export const Hamburguer = styled.div`
   z-index: 20;
   display: none;
   top: ${({ open }) => (open ? "2rem" : "0")};
-  
 
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-flow: column nowrap;
+    cursor: pointer;
   }
 
   div {
@@ -73,6 +73,7 @@ export const Ul = styled.ul`
     display: flex;
     align-items: center;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    z-index: 10;
     top: 21px;
     right: 0;
     margin-right: 0;
