@@ -28,7 +28,7 @@ export const Hamburguer = styled.div`
 
   div {
     width: 2rem;
-    height: 0.25rem;
+    height: 2px;
     background-color: ${({ open }) => (open ? "#ccc" : "#333")};
     border-radius: 10px;
     transform-origin: 1px;
@@ -60,6 +60,12 @@ export const Ul = styled.ul`
     font-weight: 500;
     font-family: "Montserrat";
     cursor: pointer;
+    color: #F1F1F2;
+  }
+
+  li:hover {
+    text-shadow: 6px 8px 10px rgba(32,33,36,.28);
+    padding-bottom: 5px;
   }
 
   li:first-child {
@@ -68,7 +74,7 @@ export const Ul = styled.ul`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #f1f1f2;
+    background-color: #787780;
     position: fixed;
     display: flex;
     align-items: center;
@@ -83,10 +89,10 @@ export const Ul = styled.ul`
     padding-top: 10px;
     padding-bottom: 10px;
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     li {
-      color: #000;
+      color: #F1F1F2;
       font-weight: 600;
       font-size: 16px;
       font-family: "Open Sans";

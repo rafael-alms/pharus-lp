@@ -5,7 +5,7 @@ export const Container = styled.header `
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 88px;
+    top: 48px;
     left: 99px;
     right: 99px;
 
@@ -19,29 +19,17 @@ export const Container = styled.header `
 export const Logo = styled.div `
     display: flex;
 
-    .logoBranca img {
+    .logoRoxa img {
         width: 318px;
         height: 69px;
-    }
-
-    .logoPreta {
-        display: none;
     }
     
     @media (max-width: 768px) {
         margin-left: 16px;
 
-        .logoPreta {
-            display: flex;
-        }
-
-        .logoPreta img {
+        .logoRoxa img {
             width: 240px;
             height: 52px;
-        }
-
-        .logoBranca {
-            display: none;
         }
     }
 `;

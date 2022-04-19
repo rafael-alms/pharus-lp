@@ -4,11 +4,11 @@ export const Container = styled.div `
     @media (min-width: 769px) {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-around;
         position: relative;
         width: 100%;
         top: 48px;
         left: 99px;
-        height: 880px;
     }
 
     @media (max-width: 768px) {
@@ -22,10 +22,9 @@ export const Container = styled.div `
 
 export const Image = styled.div `
     @media (min-width: 769px) {
-        margin-top: 171px;
+        margin-top: -43px;
         margin-right: 201px;
         width: 30vw;
-        height: 626px;
         display: flex;
     }
     
@@ -39,13 +38,15 @@ export const Image = styled.div `
 export const Text = styled.div `
     display: flex;
     flex-direction: column;
+    color: #F1F1F2;
 
     .titulo {
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 56px;
         margin-top: 48px;
-        margin-bottom: 62px;
+        margin-left: 99px;
+        margin-bottom: 38px;
     }
 
     .info{
@@ -57,7 +58,9 @@ export const Text = styled.div `
     .porcentagem {
         font-family: 'Montserrat';
         font-weight: 700;
-        font-size: 112px;
+        font-size: 56px;
+        line-height: 68px;
+        text-align: center;
         margin-right: 65px;
     }
 
@@ -66,6 +69,13 @@ export const Text = styled.div `
         font-weight: 500;
         font-size: 34px;
         line-height: 41px;
+    }
+
+    .fonte {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 20px;
     }
 
     .imagemCelular {
@@ -89,8 +99,12 @@ export const Text = styled.div `
         .titulo {
             display: flex;
             justify-content: center;
+            text-align: center;
             font-size: 34px;
+            margin-top: 0;
+            margin-left: 5%;
             margin-bottom: 53px;
+            width: 100%;
         }
 
         .contemInfo {
@@ -107,7 +121,8 @@ export const Text = styled.div `
         }
 
         .porcentagem {
-            font-size: 56px;
+            font-size: 34px;
+            line-height: 41px;
             margin-right: 0;
             text-align: center;
         }
@@ -120,9 +135,13 @@ export const Text = styled.div `
             text-align: center;
         }
 
+        .fonte {
+            display: none;
+        }
+
         .imagemCelular {
             display: flex;
-            width: 143px;
+            width: 127px;
             height: 200px;
         }
 
@@ -131,30 +150,60 @@ export const Text = styled.div `
             flex-wrap: wrap;
             justify-content: space-between;
             margin-left: 0;
+            margin-top: 20px;
         }
     }
 `;
 
 export const Card = styled.div `
-    background: #CECED1;
+    background: #3C20B1;
+    color: #F1F1F2;
     border-radius: 12px;
-    width: 42%;
+    width: 25.5vw;
     height: 173px;
     margin-left: 29px;
     margin-bottom: 48px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transform: ${({ click }) => (click ? "rotateY(180deg)" : "")};
+    transition: transform 0.8s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    .girado {
+        display: none;
+        display: ${({ click }) => (click ? "flex" : "")};
+        transform: rotateY(180deg);
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    img {
+        display: ${({ click }) => (click ? "none" : "")};
+    }
 
     .dados {
-        margin-left: 36px;
-        width: 40%;
+        text-align: center;
+        width: 97.5%;
     }
 
     .numeroCard {
         font-family: 'Montserrat';
         font-weight: 600;
         font-size: 45px;
+        display: ${({ click }) => (click ? "none" : "")};
     }
 
     .descricaoCard {
@@ -162,6 +211,7 @@ export const Card = styled.div `
         font-weight: 400;
         font-size: 24px;
         line-height: 29px;
+        display: ${({ click }) => (click ? "none" : "")};
     }
     
     @media (max-width: 768px) {
@@ -169,16 +219,6 @@ export const Card = styled.div `
         margin-bottom: 24px;
         width: 48%;
         height: 102px;
-
-        img {
-            width: 21px;
-            height: 56px;
-        }
-
-        .dados {
-            margin-left: 25px;
-            width: 50%;
-        }
 
         .numeroCard {
             font-size: 24px;
@@ -189,6 +229,33 @@ export const Card = styled.div `
             font-weight: 400;
             font-size: 12px;
             line-height: 15px;
+        }
+
+        .girado {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        .aumento {
+            width: 46px;
+            height: 30px;
+        }
+
+        .crianca {
+            width: 18px;
+            height: 47px;
+        }
+
+        .noSchool {
+            width: 60px;
+            height: 60px;
+        }
+
+        .desemprego {
+            width: 46px;
+            height: 45px;
         }
     }
 `;

@@ -13,21 +13,22 @@ export const Container = styled.div `
         height: 750px;
         
         .titulo {
-            margin-top: 91px;
             margin-bottom: 50px;
             font-family: 'Montserrat';
             font-weight: 700;
-            font-size: 34px;
+            font-size: 56px;
             width: 40vw;
+            white-space: nowrap;
         }
 
         .conteudo {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 20px; 
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px; 
             text-align: justify;
             width: 40vw;
-            margin-top: 25px; //alinha 2º parágrafo
+            margin-top: 25px;
             margin-right: 145px;
         }
 
@@ -40,7 +41,7 @@ export const Container = styled.div `
             border-radius: 16px;
             width: 40vw;
             height: 56px;
-            margin-top: 91px;
+            margin-top: 74px;
         }
 
         button:hover {
@@ -49,25 +50,26 @@ export const Container = styled.div `
     }
 
     button:active {
-            background: #4B14B5;
+        background: #4B14B5;
         }
 
     @media (max-width: 768px) {
-        margin-top: 71px;
         margin-bottom: 88px;
         flex-direction: column; 
         display: flex;
         align-items: center;
 
         .titulo {
-            margin-top: 71px;
+            margin-top: 56px;
             font-family: 'Montserrat';
             font-weight: 700;
             font-size: 24px;
             margin-bottom: 22px;
             text-align: center;
+            width: 90%;
             display: flex;
             justify-content: center;
+            margin-left: 5%;
         }
 
         .conteudo {
@@ -76,7 +78,7 @@ export const Container = styled.div `
             line-height: 17px; 
             text-align: justify;
             width: 90%;
-            margin-top: 25px; //alinha 2º parágrafo
+            margin-top: 25px;
             margin-left: 5%;
         }
 
@@ -85,10 +87,10 @@ export const Container = styled.div `
             color: #F1F1F2;
             font-family: 'Montserrat';
             font-weight: 600;
-            font-size: 20px;
+            font-size: 14px;
             border-radius: 16px;
             width: 90%;
-            height: 48px;
+            height: 32px;
             margin-top: 64px;
             margin-left: 5%;
             margin-bottom: 97px;
@@ -97,23 +99,19 @@ export const Container = styled.div `
 `;
 
 export const Imagem = styled.div `
-    margin-top: 91px;
+    margin-top: 160px;
     margin-right: 99px;
     width: 40vw;
     display: flex;
     justify-content: center;
 
     .telas {
-        margin-right: 99px;
-    }
-
-    .telas img {
-        width: 500px;
-        height: 397px;
+        margin-right: 200px;
+        
     }
     
     @media (max-width: 768px) {
-        margin-top: 150px;
+        margin-top: 48px;
         margin-right: 0;
 
         .telas {
@@ -122,7 +120,7 @@ export const Imagem = styled.div `
         
         .telas img {
             width: 343px;
-            height: 257px;
+            height: 206px;
         }
     }
 `;

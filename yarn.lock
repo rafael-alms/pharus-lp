@@ -8303,6 +8303,18 @@
   "resolved" "https://registry.npmjs.org/thunky/-/thunky-1.1.0.tgz"
   "version" "1.1.0"
 
+"tiny-slider-react@^0.5.4":
+  "integrity" "sha512-FZ9W+xqV4I7WGmsd8ThKEDcfjCDRksjpcNJIuRvCe2o5VkfTsVXifZkyYuVWH1CPdm5StkdmISzYQbKcM3viLA=="
+  "resolved" "https://registry.npmjs.org/tiny-slider-react/-/tiny-slider-react-0.5.4.tgz"
+  "version" "0.5.4"
+  dependencies:
+    "tiny-slider" "^2.9.3"
+
+"tiny-slider@^2.9.3":
+  "integrity" "sha512-LAs2kldWcY+BqCKw4kxd4CMx2RhWrHyEePEsymlOIISTlOVkjfK40sSD7ay73eKXBLg/UkluAZpcfCstimHXew=="
+  "resolved" "https://registry.npmjs.org/tiny-slider/-/tiny-slider-2.9.4.tgz"
+  "version" "2.9.4"
+
 "tmpl@1.0.5":
   "integrity" "sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw=="
   "resolved" "https://registry.npmjs.org/tmpl/-/tmpl-1.0.5.tgz"

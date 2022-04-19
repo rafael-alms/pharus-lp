@@ -2,35 +2,37 @@ import styled from "styled-components";
 
 export const Container = styled.div `
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
     position: relative;
-    top: 48px;
     left: 99px;
     right: 99px;
-    margin-bottom: 118px;
+    //height: 650px;
 
     @media (max-width: 768px) {
-        top: 0;
         left: 0;
         right: 0;
         margin-bottom: 48px;
         flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
     }
 `;
 
 export const Imagem = styled.div `
-    margin-top: 91px;
-    margin-right: 198px;
+    @media (min-width: 769px) {
+        margin-top: 120px;
+        margin-right: 99px;
+        width: 40vw;
+    }
     
     @media (max-width: 768px) {
-        margin-left: 0;
+        margin-top: 48px;
         margin-right: 0;
 
         img {
-            width: 300px;
-            height: 250px;
+            width: 232px;
+            height: 175px;
         }
     }
 `;
@@ -38,26 +40,27 @@ export const Imagem = styled.div `
 export const Texto = styled.div `
     display: flex;
     flex-direction: column;
-    //text-align: justify;
-    margin-top: 48px;
     margin-right: 61px;
-    width: 60%;
+    width: 45vw;
 
     .titulo {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 56px;
-        justify-content: flex-start;
         margin-bottom: 72px;
     }
 
     .conteudo {
+        font-family: 'Montserrat';
         font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-        width: 80%;
-        //margin-top: 25px;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    .paragrafo {
+        margin-top: 25px;
     }
 
     @media (max-width: 768px) {
@@ -74,6 +77,7 @@ export const Texto = styled.div `
         }
 
         .conteudo {
+            font-family: 'Open Sans';
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
