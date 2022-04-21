@@ -6,17 +6,16 @@ export const Container = styled.div `
         flex-direction: column;
         position: relative;
         width: 100%;
-        top: 106px;
-        height: 1069px;
+        padding-top: 106px;
         
         .titulo {
             font-family: 'Montserrat';
+            text-align: center;
             font-weight: 700;
             font-size: 45px;
             color: #F1F1F2;
             margin-top: 48px;
-            margin-left: 99px;
-            margin-bottom: 29px;
+            margin-bottom: 40px;
         }
 
         .sliderStyle {
@@ -25,6 +24,7 @@ export const Container = styled.div `
             justify-content: space-evenly;
             margin-top: 60px;
             margin-left: 5%;
+            padding-right: 150px;
         }
     }
 
@@ -49,12 +49,13 @@ export const Container = styled.div `
             justify-content: space-evenly;
             margin-top: 60px;
             margin-left: 20%;
+            padding-right: 100px;
         }
     }
 `;
 
 export const Card = styled.div `
-    background: #EA8642;
+    background: #FCBA7A;
     border-radius: 16px;
     width: 606px;
     height: 323px;
@@ -75,16 +76,17 @@ export const Card = styled.div `
     }
 
     .depoimento {
+        display: flex;
+        align-items: center;
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
         width: 95%;
-        text-align: center;
         height: 30%;
     }
 
     .identificacao {
-        background: #FCBA7A;
+        background: #FDDCA1;
         width: 100%;
         height: 55px;
         border-radius: 0px 0px 16px 16px;
@@ -126,11 +128,6 @@ export const Card = styled.div `
             width: 64px;
             height: 64px;
             margin-top: -30px;
-        }
-
-        .estrelas {
-            width: 200px;
-            height: 36px;
         }
     }
 `;

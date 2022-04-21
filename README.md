@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img src="https://raw.githubusercontent.com/rafael-alms/pharus-lp/e4c1207d4d45a7f9b0aa0a75bddfc0c436b90628/src/assets/icons/logo-large-purple.svg"/>
+    <p>Landing Page</p>
+</h1> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=react&message=biblioteca&color=blue&style=for-the-badge&logo=REACT"/>
+  <img src="https://img.shields.io/static/v1?label=Vercel&message=deploy&color=blue&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
 
-## Available Scripts
+> Status do Projeto: :heavy_check_mark: (concluído)
 
-In the project directory, you can run:
+### Tópicos 
 
-### `npm start`
+:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-### `npm test`
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-### `npm run build`
+## Descrição do projeto 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="justify">
+  O Pharus Landing Page é um produto web desenvolvido como parte do desafio da 4ª edição do ioasys Camp. O Pharus é um aplicativo educacional, desenvolvido para ser aplicado em plataforma Android e IOS, e irá permitir que escolas possam formar parcerias com empresas, trazendo para a grade curricular disciplinas para desenvolver e capacitar alunos, visando a motivação educional e a entrada no mercado de trabalho. Este repositório contém a landing page desse projeto, um site que apresenta o produto (Pharus) com o objetivo de atrair possíveis usuários.
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Funcionalidades
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:heavy_check_mark: Exibição do conteúdo
 
-### `npm run eject`
+:heavy_check_mark: Layout interativo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+:heavy_check_mark: Integração com Instagram
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+:heavy_check_mark: Cadastro na newsletter
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+:heavy_check_mark: Versão mobile
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deploy da Aplicação :dash:
 
-## Learn More
+> Link do deploy da aplicação, realizado pela Vercel: https://pharus-lp.vercel.app/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Pré-requisitos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+:warning: [Node](https://nodejs.org/en/download/)
 
-### Code Splitting
+:warning: [VS Code](https://code.visualstudio.com/download)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+:warning: [Git](https://git-scm.com/download/win)
 
-### Analyzing the Bundle Size
+## Como rodar a aplicação :arrow_forward:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+No terminal, clone o projeto: 
 
-### Making a Progressive Web App
+```
+git clone https://github.com/rafael-alms/pharus-lp.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Entre na pasta do projeto: 
 
-### Advanced Configuration
+```
+cd pharus-lp
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Instale as dependências: 
 
-### Deployment
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Execute a aplicação: 
 
-### `npm run build` fails to minify
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pronto, agora é possível acessar a aplicação a partir da rota http://localhost:3000
+
+## Casos de Uso
+
+Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
+
+Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
+
+## Linguagens, dependencias e libs utilizadas :books:
+
+- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
+- [React Router DOM](https://www.npmjs.com/package/react-router-dom)
+- [Styled Components](https://styled-components.com/)
+- [Tiny Slider React](https://www.npmjs.com/package/tiny-slider-react)
+- [React IG Feed](https://www.npmjs.com/package/react-ig-feed)
+
+## Resolvendo Problemas :exclamation:
+
+Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
+
+## Tarefas em aberto
+
+Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
+
+:memo: Tarefa 1 
+
+:memo: Tarefa 2 
+
+:memo: Tarefa 3 
+
+## Desenvolvedor 🐱‍👤:computer:
+
+| [<img src="https://avatars.githubusercontent.com/u/74439576?v=4" width=115><br><sub>Rafael de Almeida</sub>](https://github.com/rafael-alms) |
+| :---: |
+
+## Licença 
+
+The [MIT License]() (MIT)
+
+Copyright :copyright: 2022 - Pharus - Landing Page
+
+Made with 💜 by [Rafael de Almeida Silva](http://linkedin.com/in/rafael-de-almeida-96492073) 👋

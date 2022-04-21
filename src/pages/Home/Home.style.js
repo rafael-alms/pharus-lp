@@ -20,7 +20,6 @@ export const Container = styled.div`
     .depositions {
       background: linear-gradient(180.79deg, #792DE9 0.59%, #C3104A 99.24%);
       height: 100%;
-      padding-bottom: 105px;
     }
   }
 

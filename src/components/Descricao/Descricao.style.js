@@ -7,12 +7,12 @@ export const Container = styled.div `
     position: relative;
     left: 99px;
     right: 99px;
-    //height: 650px;
+    padding-bottom: 102px;
 
     @media (max-width: 768px) {
         left: 0;
         right: 0;
-        margin-bottom: 48px;
+        padding-bottom: 48px;
         flex-direction: column-reverse;
         display: flex;
         align-items: center;

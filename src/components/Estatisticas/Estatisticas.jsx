@@ -31,7 +31,7 @@ const Estatisticas = () => {
                         </div>
                         <div className='dados'>
                             <p className='descricaoCard'>Foi o aumento da evasão  escolar comparado com 2019</p>
-                            <p className='girado'>Fonte: (Pesquisa) Todos Pela Educação</p>
+                            <p className='girado'>Fonte: (Pesquisa) IBGE</p>
                         </div>
                     </S.Card>
                     <S.Card click={click} onClick={() => setClick(!click)}>

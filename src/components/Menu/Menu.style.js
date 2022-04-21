@@ -64,8 +64,15 @@ export const Ul = styled.ul`
   }
 
   li:hover {
-    text-shadow: 6px 8px 10px rgba(32,33,36,.28);
-    padding-bottom: 5px;
+    color: #5C25C6;
+  }
+
+  li:active {
+    color: #EE4C8E;
+  }
+
+  li:focus {
+    color: #020305;
   }
 
   li:first-child {

@@ -1,37 +1,34 @@
 import profile from '../../assets/images/profile.svg';
-import tres from '../../assets/images/3estrelas.svg';
-import quatro from '../../assets/images/4estrelas.svg';
-import cinco from '../../assets/images/5estrelas.svg';
 import * as S from './Depoimentos.style';
 import TinySlider from "tiny-slider-react";
-//import 'tiny-slider/dist/tiny-slider.css';
+import 'tiny-slider/dist/tiny-slider.css';
+import Instagram from '../../components/Instagram'
 
 const Depoimentos = () => {
         
     const settings = {
         lazyload: false,
-        nav: true,
+        nav: false,
         mouseDrag: true,
         loop: false,
         items: 1,
         gutter: -200,
         controls: false,
+        autoKeys: false,
+        controlsText: false,
         responsive: {
-            420: {
-                items: 2
+            0: {
+                items: 1,
+                fixedWidth: 500
+            },
+            769: {
+                items: 2,
+                fixedWidth: 900
             }
         }
     };
 
-    // document.body.onresize = function() {
-    //     if (document.body.clientWidth < 769) {
-    //         var largura = window.screen.width;
-    //     }
-    // };
-
     const cardStyle = {
-        //width: (window.screen.width > 768 ? "606px" : "252px"),
-        //height: (window.screen.width > 768 ? "323px" : "405px"),
         display: "flex",
         flexDirection: "column",
         marginLeft: "30px"
@@ -43,23 +40,21 @@ const Depoimentos = () => {
             <TinySlider className="sliderStyle" settings={settings} >
                 <S.Card style={cardStyle}>
                     <img src={profile} className="profilePic" />
-                    <img src={quatro} className="estrelas" />
-                    <p className='depoimento'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim condimentum mi sed tempus. Donec eu erat ut erat iaculis mattis. Phasellus bibendum risus vel nibh euismod, et molestie sem malesuada. In dictum diam ut est tempus viverra. Morbi vestibulum viverra lorem, eu egestas leo maximus at. Sed lobortis quam at elit posuere blandit.</p>
-                    <p className='identificacao'>FULANO DE TAL - ALUNO</p>
+                    <p className='depoimento'>Sou Diretora de uma escola e, recentemente, coloquei a tecnologia para nossos alunos - estamos recebendo vários elogios dos alunos e, também, dos respectivos responsáveis por eles.</p>
+                    <p className='identificacao'>Joana Freitas, diretora escolar</p>
                 </S.Card>
                 <S.Card style={cardStyle}>
                     <img src={profile} className="profilePic" />
-                    <img src={tres} className="estrelas" />
-                    <p className='depoimento'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim condimentum mi sed tempus. Donec eu erat ut erat iaculis mattis. Phasellus bibendum risus vel nibh euismod, et molestie sem malesuada. In dictum diam ut est tempus viverra. Morbi vestibulum viverra lorem, eu egestas leo maximus at. Sed lobortis quam at elit posuere blandit.</p>
-                    <p className='identificacao'>FULANO DE TAL - ALUNO</p>
+                    <p className='depoimento'>Quando o Pharus entrou na minha escola, fiquei super animado com tudo que estava vendo e como seria o futuro das minhas aulas; gosto muito de uma competição saudável - ainda mais quando é algo bom com um objetivo positivo.</p>
+                    <p className='identificacao'>Anônimo - Aluno</p>
                 </S.Card>
                 <S.Card style={cardStyle}>
                     <img src={profile} className="profilePic" />
-                    <img src={cinco} className="estrelas" />
                     <p className='depoimento'>O Pharus me ajudou a selecionar jovens promissores no ensino médio, e com isso consegui atrair talentos e desenvolvê-los para deixá-los capacitados para o mercado de trabalho, e ainda pudemos absorver os destaques.</p>
                     <p className='identificacao'>Paulo Carvalho, diretor da Medal Tecnologia</p>
                 </S.Card>
             </TinySlider>
+            <Instagram />
         </S.Container>
     )
 }

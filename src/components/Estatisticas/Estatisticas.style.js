@@ -82,11 +82,13 @@ export const Text = styled.div `
         display: none;
     }
 
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -29px;
-        margin-top: 51px;
+    @media (min-width: 769px) {
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -29px;
+            margin-top: 51px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -147,7 +149,7 @@ export const Text = styled.div `
 
         .cards {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: space-between;
             margin-left: 0;
             margin-top: 20px;
@@ -171,6 +173,8 @@ export const Card = styled.div `
     transform: ${({ click }) => (click ? "rotateY(180deg)" : "")};
     transition: transform 0.8s;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    
 
     .girado {
         display: none;
@@ -216,26 +220,24 @@ export const Card = styled.div `
     
     @media (max-width: 768px) {
         margin-left: 0;
-        margin-bottom: 24px;
-        width: 48%;
-        height: 102px;
+        padding-bottom: 24px;
+        width: 100%;
+        height: 170px;
 
         .numeroCard {
-            font-size: 24px;
+            font-size: 34px;
         }
 
         .descricaoCard {
-            font-family: 'Open Sans';
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
         }
 
         .girado {
-            font-family: 'Open Sans';
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
         }
 
         .aumento {
