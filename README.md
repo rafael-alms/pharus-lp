@@ -43,11 +43,15 @@
 
 :heavy_check_mark: Exibição do conteúdo
 
+:heavy_check_mark: Menu
+
 :heavy_check_mark: Layout interativo
+
+:heavy_check_mark: Carrossel
 
 :heavy_check_mark: Integração com Instagram
 
-:heavy_check_mark: Cadastro na newsletter
+:heavy_check_mark: Pop-ups
 
 :heavy_check_mark: Versão mobile
 
