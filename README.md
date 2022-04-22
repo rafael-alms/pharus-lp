@@ -18,11 +18,20 @@
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
+:small_blue_diamond: [Layout](#layout)
+
 :small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+
+:small_blue_diamond: [Linguagens, dependências e libs utilizadas :books:](#linguagens,-dependências-e-libs-utilizadas-books)
+
+:small_blue_diamond: [Desenvolvedor](#desenvolvedor-🐱‍👤-computer)
+
+:small_blue_diamond: [Licença](#licensa)
+
 
 ## Descrição do projeto 
 
@@ -41,6 +50,15 @@
 :heavy_check_mark: Cadastro na newsletter
 
 :heavy_check_mark: Versão mobile
+
+## Layout
+
+A imagem abaixo mostra a tela inicial deste projeto. Para acessar o site e ver todos os seus recursos em ação, acesse o link na seção seguinte.
+
+<p align="center">
+  <img  alt="Tela Inicial" title="Tela Inicial" src="https://raw.githubusercontent.com/rafael-alms/pharus-lp/main/src/assets/images/Tela%20inicial.png"/>
+Tela inicial da Landing Page Pharus
+</p>
 
 ## Deploy da Aplicação :dash:
 
@@ -82,33 +100,13 @@ npm start
 
 Pronto, agora é possível acessar a aplicação a partir da rota http://localhost:3000
 
-## Casos de Uso
-
-Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
-
-Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
-
-## Linguagens, dependencias e libs utilizadas :books:
+## Linguagens, dependências e libs utilizadas :books:
 
 - [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 - [Styled Components](https://styled-components.com/)
 - [Tiny Slider React](https://www.npmjs.com/package/tiny-slider-react)
 - [React IG Feed](https://www.npmjs.com/package/react-ig-feed)
-
-## Resolvendo Problemas :exclamation:
-
-Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
-
-## Tarefas em aberto
-
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
-
-:memo: Tarefa 1 
-
-:memo: Tarefa 2 
-
-:memo: Tarefa 3 
 
 ## Desenvolvedor 🐱‍👤:computer:
 
@@ -117,7 +115,7 @@ Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementada
 
 ## Licença 
 
-The [MIT License]() (MIT)
+The [MIT License](https://github.com/rafael-alms/pharus-lp/blob/add-license-1/LICENSE) (MIT)
 
 Copyright :copyright: 2022 - Pharus - Landing Page
 
