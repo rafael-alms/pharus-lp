@@ -28,9 +28,9 @@
 
 :small_blue_diamond: [Linguagens, dependências e libs utilizadas :books:](#linguagens,-dependências-e-libs-utilizadas-books)
 
-:small_blue_diamond: [Desenvolvedor](#desenvolvedor-🐱‍👤-computer)
+:small_blue_diamond: [Desenvolvedor](#desenvolvedor-🐱‍👤computer)
 
-:small_blue_diamond: [Licença](#licensa)
+:small_blue_diamond: [Licença](#licença)
 
 
 ## Descrição do projeto 
