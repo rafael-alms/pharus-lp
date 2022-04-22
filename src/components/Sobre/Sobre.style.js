@@ -115,6 +115,7 @@ export const Container = styled.div `
 
         .titulo {
             margin-top: 56px;
+            margin-left: 0;
             margin-bottom: 22px;
             font-family: 'Montserrat';
             font-weight: 700;
