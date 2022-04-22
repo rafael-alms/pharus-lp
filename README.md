@@ -121,4 +121,6 @@ The [MIT License]() (MIT)
 
 Copyright :copyright: 2022 - Pharus - Landing Page
 
+---
+
 Made with 💜 by [Rafael de Almeida Silva](http://linkedin.com/in/rafael-de-almeida-96492073) 👋

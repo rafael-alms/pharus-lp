@@ -21,6 +21,11 @@ export const Container = styled.div`
       background: linear-gradient(180.79deg, #792DE9 0.59%, #C3104A 99.24%);
       height: 100%;
     }
+
+    .about {
+      background: linear-gradient(180deg, #C3104A 0%, rgba(241, 241, 242, 0) 66.14%);
+      height: 100%;
+    }
   }
 
   @media (max-width: 768px) {
@@ -44,6 +49,12 @@ export const Container = styled.div`
 
     .depositions {
       background: linear-gradient(180.79deg, #792DE9 0.59%, #C3104A 99.24%);
+      height: 100%;
+      margin-top: -1px;
+    }
+    
+    .about {
+      background: linear-gradient(180deg, #C3104A 0%, rgba(241, 241, 242, 0) 66.14%);
       height: 100%;
       margin-top: -1px;
     }

@@ -34,7 +34,7 @@ export const Container = styled.div `
         left: 0;
         width: 271px;
         height: 271px;
-        z-index: 100;
+        z-index: 5;
         font-weight: 600;
         font-size: 12px;
         color: #fff;
@@ -45,6 +45,26 @@ export const Container = styled.div `
         opacity: 1;
         background-color: #00000061;
     }
+
+    @media (min-width: 768px) {
+        ._2R-kh {
+
+            ::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+            ::-webkit-scrollbar {
+                margin-top: 20px;
+                width: 6px;
+                height: 8px;
+                background: transparent;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #E5326C;
+                border-radius: 16px;
+            }
+        }
+    }
+
     @media (max-width: 480px) {
         ._2R-kh {
             padding-left: 2.5%;

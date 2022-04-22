@@ -45,13 +45,17 @@ export const Container = styled.div `
         }
 
         button:hover {
-            background: #6D36D7;
+            background: #792DE9;
         }
     }
 
     button:active {
-        background: #4B14B5;
+        background: #3C20B1;
         }
+
+    button:focus {
+        background: #5C25C6;
+    }
 
     @media (max-width: 768px) {
         margin-bottom: 88px;
@@ -93,7 +97,6 @@ export const Container = styled.div `
             height: 32px;
             margin-top: 64px;
             margin-left: 5%;
-            margin-bottom: 97px;
         }
     }
 `;
