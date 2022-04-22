@@ -35,7 +35,8 @@ export const Container = styled.div `
         font-weight: 700;
         font-size: 34px;
         line-height: 41px;
-        margin: 0;
+        text-align: left;
+        margin-bottom: 24px;
     }
 
     .conteudo {
@@ -44,6 +45,8 @@ export const Container = styled.div `
         font-size: 24px;
         line-height: 29px;
         width: 100%;
+        text-align: left;
+        margin-bottom: 32px;
     }
 
     .conteudo1{

@@ -29,9 +29,9 @@ const Sobre = () => {
             </div>
             <p className='convite'>Siga-nos em nossas redes:</p>
             <div className='redes'>
-                <img src={facebook} alt="facebook" />
+                <img src={facebook} alt="facebook" title="Em breve!" />
                 <a href="https://www.instagram.com/ummaluconocodaco/" target="_blank"><img src={instagram} alt="instagram" /></a>
-                <img src={linkedin} alt="linkedin" />
+                <img src={linkedin} alt="linkedin" title="Em breve!" />
             </div>
         </S.Container>
     )
