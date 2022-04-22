@@ -3,12 +3,17 @@ import facebook from '../../assets/images/facebook.svg';
 import instagram from '../../assets/images/instagram.svg';
 import linkedin from '../../assets/images/linkedin.svg';
 import * as S from './Sobre.style';
+import Newsletter from '../../components/Newsletter'
+import { useState } from 'react';
 
 const Sobre = () => {
+
+    const [buttonNewsletter, setButtonNewsletter] = useState(false);
         
     return (
         <S.Container>
-            <button>Receba nossa newsletter</button>
+            <button onClick={() => setButtonNewsletter(true)}>Receba nossa newsletter</button>
+            <Newsletter trigger={buttonNewsletter} setTrigger={setButtonNewsletter} />
             <p className='titulo hidden'>Sobre nós</p>
             <div className='conteudo'>
                 <img className="mascote" src={mascote} alt="El Brabo" />

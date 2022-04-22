@@ -9,8 +9,8 @@ export const Container = styled.div `
         height: 676px;
         background-color: #FDDCA1;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
         z-index: 20;
         border-radius: 16px;
@@ -23,18 +23,19 @@ export const Container = styled.div `
         width: 100%;
         max-width: 1200px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .popup-inner .close-btn {
         position: absolute;
     }
 
-    .titulo {
+    .title {
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 34px;
         line-height: 41px;
+        margin: 0;
     }
 
     .conteudo {
@@ -42,52 +43,66 @@ export const Container = styled.div `
         font-weight: 500;
         font-size: 24px;
         line-height: 29px;
+        width: 100%;
     }
 
-    .paragrafo {
-        margin-top: 25px;
-    }
-
-    .texto-img {
+    .conteudo1{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 200px;
+    }
+
+    .conteudo2 {
+        display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
     }
 
-    a {
-        color: #C3104A;
-        text-decoration: underline;
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
         font-family: 'Montserrat';
-        font-weight: 500;
+        font-weight: 600;
         font-size: 24px;
+        line-height: 29px;
+        padding-bottom: 16px;
+        text-align: left;
     }
 
-    a:hover {
-        color: #EE4C8E;
+    input {
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #AFAEB3;
+        outline: 0;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
     }
 
-    a:active {
-        color: #EA8642;
+    .btn {
+        margin-bottom: 80px;
+    }
+
+    .close-btn {
+        background-color: transparent;
+        border: 2px solid #5C25C6;
+        color: #5C25C6;
+        right: 30px;
+    }
+
+    .close-btn:hover {
+        border: 3px solid #5C25C6;
+        background-color: transparent;
     }
 
     @media (min-width: 769px) {
-        .titulo {
-            margin-bottom: 48px;
-            font-family: 'Montserrat';
-            font-weight: 700;
-            font-size: 34px;
-            text-align: left;
-        }
-
-        .conteudo {
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 29px; 
-            text-align: justify;
-            margin-right: 145px;
-        }
-
         button {
             background: #5C25C6;
             color: #F1F1F2;
@@ -95,7 +110,7 @@ export const Container = styled.div `
             font-weight: 500;
             font-size: 20px;
             border-radius: 16px;
-            width: 40vw;
+            width: 348px;
             height: 56px;
             margin-top: 74px;
         }
@@ -119,7 +134,7 @@ export const Container = styled.div `
             top: 25px;
             left: 5%;
             width: 90%;
-            height: 81vh;
+            height: 500px;
             background-color: #FDDCA1;
             display: flex;
             flex-direction: column;
@@ -132,7 +147,7 @@ export const Container = styled.div `
 
         .popup-inner {
             position: relative;
-            width: 80%;
+            width: 90%;
             display: flex;
             flex-direction: column;
             padding: 0;
@@ -142,13 +157,13 @@ export const Container = styled.div `
             position: absolute;
         }
 
-        .titulo {
+        .title {
             font-family: 'Montserrat';
             font-weight: 700;
-            font-size: 34px;
-            line-height: 41px;
+            font-size: 24px;
+            line-height: 29px;
             margin-top: 0;
-            margin-left: 5%;
+            margin-left: 0;
             margin-bottom: 25px;
         }
 
@@ -157,27 +172,34 @@ export const Container = styled.div `
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
-            text-align: justify;
+            text-align: center;
+            width: 100%;
         }
 
-        .paragrafo {
-            margin-top: 25px;
-            margin-right: 0;
-        }
-
-        .texto-img {
+        .conteudo1{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            align-items: center;
+            margin-right: 0;
         }
 
-        a {
-            text-decoration: none;
-            font-family: 'Open Sans';
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
+        .conteudo2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .btn {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            width: 100%;
+        }
+
+        .close-btn {
+            background-color: transparent;
+            border: 2px solid #5C25C6;
+            color: #5C25C6;
+            right: 0;
         }
 
         button {
@@ -187,16 +209,37 @@ export const Container = styled.div `
             font-weight: 500;
             font-size: 18px;
             border-radius: 16px;
-            width: 90%;
+            width: 100%;
             height: 48px;
             margin-top: 16px;
             margin-left: 0;
         }
 
+        label {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            padding-bottom: 16px;
+            text-align: left;
+            margin-top: 32px;
+        }
+
+        input {
+            background-color: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid #AFAEB3;
+            outline: 0;
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
         img {
-            width: 161px;
-            height: 182px;
-            margin-top: 29px;
+            display: none;
         }
     }
 `;

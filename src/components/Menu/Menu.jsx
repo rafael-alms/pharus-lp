@@ -2,6 +2,7 @@ import * as S from './Menu.style';
 import { useState } from 'react';
 import React from 'react';
 import SaibaMais from '../../components/SaibaMais'
+import Newsletter from '../../components/Newsletter'
 
 const Menu = () => {
 
@@ -21,6 +22,8 @@ const Menu = () => {
 
     const [buttonPopup, setButtonPopup] = useState(false)
 
+    const [buttonNewsletter, setButtonNewsletter] = useState(false);
+
     return (
         <S.Menu>
             <S.Hamburguer open={open} onClick={() => setOpen(!open)}>
@@ -34,7 +37,8 @@ const Menu = () => {
                 <li onClick={() => setButtonPopup(true)}>Saiba mais</li>
                 <SaibaMais trigger={buttonPopup} setTrigger={setButtonPopup} />
                 <li onClick={handleClickSobre}>Sobre nós</li>
-                <li>Newsletter</li>
+                <li onClick={() => setButtonNewsletter(true)}>Newsletter</li>
+                <Newsletter trigger={buttonNewsletter} setTrigger={setButtonNewsletter} />
             </S.Ul>
         </S.Menu>
     )
