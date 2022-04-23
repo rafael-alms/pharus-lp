@@ -32,7 +32,7 @@ export const Container = styled.div `
             margin-right: 145px;
         }
 
-        button {
+        .saiba-mais {
             background: #5C25C6;
             color: #F1F1F2;
             font-family: 'Montserrat';
@@ -122,7 +122,7 @@ export const Container = styled.div `
             margin-left: 5%;
         }
 
-        button {
+        .saiba-mais {
             background: #5C25C6;
             color: #F1F1F2;
             font-family: 'Montserrat';
