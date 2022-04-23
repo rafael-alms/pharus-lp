@@ -119,7 +119,7 @@ export const Container = styled.div `
             top: 25px;
             left: 5%;
             width: 90%;
-            height: 81vh;
+            height: 83vh;
             background-color: #FDDCA1;
             display: flex;
             flex-direction: column;

@@ -18,7 +18,7 @@ export const Container = styled.div `
         display: none;
     }
 
-    button {
+    .cadastro-newsletter {
         background: #5C25C6;
         color: #F1F1F2;
         font-family: 'Montserrat';
@@ -105,7 +105,7 @@ export const Container = styled.div `
             margin-left: 0;
         }
 
-        button {
+        .cadastro-newsletter {
             font-size: 18px;
             line-height: 22px;
             width: 100%;

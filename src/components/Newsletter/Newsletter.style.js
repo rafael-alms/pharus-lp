@@ -26,10 +26,6 @@ export const Container = styled.div `
         flex-direction: row;
     }
 
-    .popup-inner .close-btn {
-        position: absolute;
-    }
-
     .title {
         font-family: 'Montserrat';
         font-weight: 700;
@@ -54,12 +50,14 @@ export const Container = styled.div `
         flex-direction: column;
         justify-content: space-evenly;
         margin-right: 200px;
+        width: 60%;
     }
 
     .conteudo2 {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        width: 40%;
     }
 
     .inputs {
@@ -97,7 +95,7 @@ export const Container = styled.div `
         background-color: transparent;
         border: 2px solid #5C25C6;
         color: #5C25C6;
-        right: 30px;
+        right: 0;
     }
 
     .close-btn:hover {
@@ -120,6 +118,18 @@ export const Container = styled.div `
 
         button:hover {
             background: #792DE9;
+        }
+
+        .popup-inner .send-btn {
+            position: relative;
+        }
+
+        .popup-inner .close-btn {
+            position: relative;
+        }
+
+        .inputs {
+            margin-top: 40px;
         }
     }
 
@@ -177,6 +187,7 @@ export const Container = styled.div `
             line-height: 17px;
             text-align: center;
             width: 100%;
+            margin-bottom: 0;
         }
 
         .conteudo1{
@@ -184,16 +195,18 @@ export const Container = styled.div `
             flex-direction: column;
             justify-content: space-evenly;
             margin-right: 0;
+            width: 100%;
         }
 
         .conteudo2 {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 100%;
         }
 
         .btn {
-            margin-top: 24px;
+            margin-top: 18px;
             margin-bottom: 24px;
             width: 100%;
         }
@@ -203,6 +216,7 @@ export const Container = styled.div `
             border: 2px solid #5C25C6;
             color: #5C25C6;
             right: 0;
+            margin-top: 12px;
         }
 
         button {
@@ -214,7 +228,7 @@ export const Container = styled.div `
             border-radius: 16px;
             width: 100%;
             height: 48px;
-            margin-top: 16px;
+            margin-top: 0;
             margin-left: 0;
         }
 

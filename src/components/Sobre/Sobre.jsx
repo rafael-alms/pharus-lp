@@ -12,7 +12,7 @@ const Sobre = () => {
         
     return (
         <S.Container>
-            <button onClick={() => setButtonNewsletter(true)}>Receba nossa newsletter</button>
+            <button className="cadastro-newsletter" onClick={() => setButtonNewsletter(true)}>Receba nossa newsletter</button>
             <Newsletter trigger={buttonNewsletter} setTrigger={setButtonNewsletter} />
             <p className='titulo hidden'>Sobre nós</p>
             <div className='conteudo'>
