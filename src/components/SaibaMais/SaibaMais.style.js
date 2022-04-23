@@ -161,7 +161,7 @@ export const Container = styled.div `
         }
 
         .paragrafo {
-            margin-top: 25px;
+            margin-top: 15px;
             margin-right: 0;
         }
 
